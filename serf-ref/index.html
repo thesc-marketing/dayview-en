@@ -1,20 +1,27 @@
 <!doctype html>
 <html lang="ko">
 <meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow"><title>세르프 참고 영상</title>
+<meta name="robots" content="noindex,nofollow"><title>참고 영상</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root { --bg:#fff; --ink:#191f28; --ink3:#8b95a1; }
 @media (prefers-color-scheme: dark) { :root { --bg:#17171c; --ink:#ececf0; --ink3:#7e8792; } }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--bg); color:var(--ink); font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif; }
-main { max-width:420px; margin:0 auto; padding:24px 16px 48px; }
+main { max-width:960px; margin:0 auto; padding:24px 16px 48px; }
 h1 { font-size:20px; margin:0 0 4px; }
-p { margin:0 0 16px; font-size:14px; color:var(--ink3); }
+p { margin:0 0 20px; font-size:14px; color:var(--ink3); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:20px; }
+.cap { font-size:13px; color:var(--ink3); margin-top:6px; }
 video { width:100%; aspect-ratio:9/16; border-radius:12px; background:#000; display:block; }
 </style>
 <main>
-  <h1>세르프 리프팅 참고 영상</h1>
-  <p>국내 다른 병원 세르프 광고 소재</p>
-  <video src="clips/ref_serf.mp4" poster="clips/ref_serf.jpg" controls playsinline preload="metadata"></video>
+  <h1>참고 영상</h1>
+  <p>국내 다른 병원 광고 소재 (세르프 3편 + 스킨부스터 1편)</p>
+  <div class="grid">
+    <div><video src="clips/ref_serf.mp4" poster="clips/ref_serf.jpg" controls playsinline preload="metadata"></video><div class="cap">세르프 · 병원 방문형</div></div>
+    <div><video src="clips/ref_half.mp4" poster="clips/ref_half.jpg" controls playsinline preload="metadata"></video><div class="cap">세르프 · 반쪽 비교</div></div>
+    <div><video src="clips/ref_pain.mp4" poster="clips/ref_pain.jpg" controls playsinline preload="metadata"></video><div class="cap">세르프 · 통증 비교</div></div>
+    <div><video src="clips/ref_rejutox.mp4" poster="clips/ref_rejutox.jpg" controls playsinline preload="metadata"></video><div class="cap">스킨부스터 · 브이로그</div></div>
+  </div>
 </main>
